@@ -1,0 +1,132 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; 
+  justify-content: space-between; /* Ensures the main and menu sections are spaced */
+  padding-left: 100px;
+  padding-right: 100px; /* Add right padding to balance with left padding */
+}
+
+.main {
+  display: flex;
+  padding-left: 250px;
+  flex-direction: column;
+  align-items: center;
+  width: 60%; /* Adjust width for larger color picker */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Adjust width for menu */
+  height: 65%;
+  border: 1px solid #b5838d; /* Add border */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.menu p {
+  font-size: x-large;
+  font-weight: 600; /* Adjust font size for menu heading */
+  color: #b5838d; /* Adjust color for menu heading */ /* Adjust margin for spacing */
+}
+
+.menu button {
+  width: 100%; /* Ensure buttons take full width */
+  margin-bottom: 10px; /* Add margin between buttons */
+}
+
+.color-picker-wrapper,
+.color-palette {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+
+/* General body and app container styling for the dreamy pink theme */
+body, .app-container {
+  font-family: 'Arial', sans-serif; /* You can choose a more suitable font */
+  background-color: #fbd3e9; /* Light pink background */
+  color: #333; /* For general text color, adjust if needed */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-screen {
+  text-align: center; /* Centers the text horizontally */
+  display: flex;
+  flex-direction: column; /* Stacks the elements vertically */
+  align-items: center; /* Centers the items horizontally within the flex container */
+  justify-content: center; /* Centers the items vertically within the flex container */
+  height: 100%; /* Takes full height of its container */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 48px; /* Large size for emphasis */
+  color: #b5838d; /* A color that stands out but still fits the pink theme */
+  margin-bottom: 20px; /* Adds space between the heading and the button */
+}
+
+/* Button styling */
+button {
+  background-color: #b5838d; /* Pink shade that matches the heading */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d68ba1; /* Lighter pink on hover for a nice effect */
+}
+
+input[type="range"] {
+  width: 100%; /* Full width to accommodate different screen sizes */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+label {
+  display: block; /* Ensures the label is on a new line */
+  margin: 5px 0; /* Adds some space around the label */
+}
+
+/* Add your responsive adjustments here */
+@media (max-width: 768px) {
+  .app-container, .hero {
+      width: 100%; /* Full width on smaller screens */
+      padding: 10px; /* Reduced padding */
+  }
+  input[type="range"] {
+      width: 90%; /* Slightly less than full width for aesthetics */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 24px; /* Smaller font size for very small devices */
+  }
+  .color-picker-wrapper, .color-palette {
+      flex-direction: column; /* Stack elements vertically on small screens */
+  }
+}

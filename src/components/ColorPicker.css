@@ -1,0 +1,74 @@
+/* ColorPicker.module.css */
+.picker {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    background: #ffffff;
+  }
+  /* ColorPalette.module.css */
+.palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 16px;
+    padding: 10px;
+  }
+  
+  .palette-color {
+    width: 100%;
+    height: 150px; /* Fixed height or based on content */
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* ColorPicker.module.css */
+.picker {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.picker input[type="range"] {
+  width: 100%;
+}
+/* ColorPicker.module.css */
+.colorPickerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picker {
+  margin-bottom: 20px;
+}
+
+.sketchPicker {
+  background-color: #DBB2FF !important;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2) !important;
+  border-radius: 8px !important;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
