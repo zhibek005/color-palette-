@@ -1,5 +1,5 @@
 import React from 'react';
-import './FavoritesPage.css'; // Create a CSS file for styling if needed
+import './FavoritesPage.css'; 
 
 const FavoritesPage = ({ favorites }) => {
     return (

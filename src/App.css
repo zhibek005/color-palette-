@@ -11,9 +11,9 @@
   display: flex;
   justify-content: space-around;
   width: 100%; 
-  justify-content: space-between; /* Ensures the main and menu sections are spaced */
+  justify-content: space-between; 
   padding-left: 100px;
-  padding-right: 100px; /* Add right padding to balance with left padding */
+  padding-right: 100px; 
 }
 
 .main {
@@ -21,28 +21,28 @@
   padding-left: 250px;
   flex-direction: column;
   align-items: center;
-  width: 60%; /* Adjust width for larger color picker */
+  width: 60%; 
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  width: 30%; /* Adjust width for menu */
+  width: 30%; 
   height: 65%;
-  border: 1px solid #b5838d; /* Add border */
+  border: 1px solid #b5838d; 
   border-radius: 8px;
   padding: 10px;
 }
 
 .menu p {
   font-size: x-large;
-  font-weight: 600; /* Adjust font size for menu heading */
-  color: #b5838d; /* Adjust color for menu heading */ /* Adjust margin for spacing */
+  font-weight: 600; 
+  color: #b5838d; 
 }
 
 .menu button {
-  width: 100%; /* Ensure buttons take full width */
-  margin-bottom: 10px; /* Add margin between buttons */
+  width: 100%; 
+  margin-bottom: 10px; 
 }
 
 .color-picker-wrapper,
@@ -55,12 +55,10 @@
   background-color: #fff;
 }
 
-
-/* General body and app container styling for the dreamy pink theme */
 body, .app-container {
-  font-family: 'Arial', sans-serif; /* You can choose a more suitable font */
-  background-color: #fbd3e9; /* Light pink background */
-  color: #333; /* For general text color, adjust if needed */
+  font-family: 'Arial', sans-serif; 
+  background-color: #fbd3e9; 
+  color: #333; 
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -70,24 +68,22 @@ body, .app-container {
 }
 
 .welcome-screen {
-  text-align: center; /* Centers the text horizontally */
+  text-align: center; 
   display: flex;
-  flex-direction: column; /* Stacks the elements vertically */
-  align-items: center; /* Centers the items horizontally within the flex container */
-  justify-content: center; /* Centers the items vertically within the flex container */
-  height: 100%; /* Takes full height of its container */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100%; 
 }
 
-/* Heading styling */
 h1 {
-  font-size: 48px; /* Large size for emphasis */
-  color: #b5838d; /* A color that stands out but still fits the pink theme */
-  margin-bottom: 20px; /* Adds space between the heading and the button */
+  font-size: 48px; 
+  color: #b5838d; 
+  margin-bottom: 20px; 
 }
 
-/* Button styling */
 button {
-  background-color: #b5838d; /* Pink shade that matches the heading */
+  background-color: #b5838d; 
   border: none;
   border-radius: 8px;
   color: white;
@@ -98,35 +94,34 @@ button {
 }
 
 button:hover {
-  background-color: #d68ba1; /* Lighter pink on hover for a nice effect */
+  background-color: #d68ba1; 
 }
 
 input[type="range"] {
-  width: 100%; /* Full width to accommodate different screen sizes */
-  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; 
+  cursor: pointer; 
 }
 
 label {
-  display: block; /* Ensures the label is on a new line */
-  margin: 5px 0; /* Adds some space around the label */
+  display: block; 
+  margin: 5px 0; 
 }
 
-/* Add your responsive adjustments here */
 @media (max-width: 768px) {
   .app-container, .hero {
-      width: 100%; /* Full width on smaller screens */
-      padding: 10px; /* Reduced padding */
+      width: 100%; 
+      padding: 10px; 
   }
   input[type="range"] {
-      width: 90%; /* Slightly less than full width for aesthetics */
+      width: 90%; 
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-      font-size: 24px; /* Smaller font size for very small devices */
+      font-size: 24px; 
   }
   .color-picker-wrapper, .color-palette {
-      flex-direction: column; /* Stack elements vertically on small screens */
+      flex-direction: column; 
   }
 }
